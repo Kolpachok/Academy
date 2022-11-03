@@ -1,0 +1,14 @@
+#Перестановка усложненная#
+n1 = int(input())
+n2 = 0
+
+while n1 > 0:
+    digit = n1 % 10
+    n1 = n1 // 10
+    n2 = n2 * 10
+    n2 = n2 + digit
+#n2 = int(n2)
+if n2 > 2147483648:
+    n2 = 0
+print(n2)
+print(type(n2))
