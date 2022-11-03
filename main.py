@@ -1,0 +1,13 @@
+#Определить 3 слова подряд#
+words = input()
+words = words.split()
+count = 0
+for w in words:
+    if w.isalpha():
+        count += 1
+        if count == 3:
+            print("True")
+    else:
+        count = 0
+if count == 0:
+    print("False")
